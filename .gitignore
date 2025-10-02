@@ -52,8 +52,7 @@ venv.bak/
 *.swo
 *~
 
-# Data files (you might want to keep some data files)
-*.csv
+# Data files (excluding example datasets)
 *.xlsx
 *.json
 *.parquet
@@ -69,8 +68,7 @@ venv.bak/
 *.sqlite
 *.sqlite3
 
-# Large data directories
-data/
+# Large data directories (excluding our example data)
 datasets/
 raw_data/
 processed_data/
@@ -78,6 +76,11 @@ output/
 outputs/
 results/
 cache/
+
+# Keep example datasets for tutorials
+!data/
+!data/*.csv
+!data/sample/
 
 # Model files
 *.model
