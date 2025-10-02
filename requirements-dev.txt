@@ -1,0 +1,186 @@
+# ==============================================================================
+# DEVELOPMENT REQUIREMENTS - COMPREHENSIVE TIERED ANALYTICS SUITE
+# ==============================================================================
+# Author: Brandon Deloatch
+# Affiliation: Quipu Research Labs, LLC
+# Date: 2025-10-02
+# Version: v1.3
+# ==============================================================================
+#
+# This file contains additional dependencies for development, testing, and
+# contribution to the Comprehensive Tiered Analytics Suite.
+#
+# Installation:
+#   pip install -r requirements.txt -r requirements-dev.txt
+#
+# ==============================================================================
+
+# ==============================================================================
+# CODE QUALITY & FORMATTING
+# ==============================================================================
+
+# Code Formatting
+black>=23.0.0
+isort>=5.12.0
+autopep8>=2.0.0
+
+# Code Quality
+flake8>=6.0.0
+pylint>=2.17.0
+mypy>=1.4.0
+
+# Security Scanning
+bandit>=1.7.0
+safety>=2.3.0
+
+# ==============================================================================
+# TESTING FRAMEWORK
+# ==============================================================================
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-xdist>=3.3.0
+pytest-mock>=3.11.0
+
+# Notebook Testing
+nbval>=0.10.0
+papermill>=2.4.0
+
+# ==============================================================================
+# DOCUMENTATION
+# ==============================================================================
+
+# Documentation Generation
+sphinx>=7.0.0
+sphinx-rtd-theme>=1.3.0
+myst-parser>=2.0.0
+
+# Jupyter Documentation
+nbsphinx>=0.9.0
+jupyter-book>=0.15.0
+
+# ==============================================================================
+# DEVELOPMENT TOOLS
+# ==============================================================================
+
+# Environment Management
+pip-tools>=7.0.0
+pipreqs>=0.4.0
+
+# Git Hooks
+pre-commit>=3.3.0
+
+# Jupyter Extensions
+jupyter-contrib-nbextensions>=0.7.0
+jupyter-nbextensions-configurator>=0.6.0
+
+# Memory Profiling
+memory-profiler>=0.61.0
+line-profiler>=4.0.0
+
+# ==============================================================================
+# PERFORMANCE BENCHMARKING
+# ==============================================================================
+
+# Performance Testing
+pytest-benchmark>=4.0.0
+asv>=0.5.0
+
+# Profiling
+py-spy>=0.3.0
+snakeviz>=2.2.0
+
+# ==============================================================================
+# OPTIONAL ADVANCED PACKAGES
+# ==============================================================================
+
+# Advanced Time Series
+prophet>=1.1.4
+arch>=5.3.0
+pmdarima>=2.0.0
+
+# Advanced ML
+imbalanced-learn>=0.11.0
+bayesian-optimization>=1.4.0
+optuna>=3.2.0
+
+# Financial Analysis
+yfinance>=0.2.0
+alpha-vantage>=2.3.0
+
+# Deep Learning Alternatives
+torch>=2.0.0
+jax>=0.4.0
+
+# ==============================================================================
+# NOTEBOOK EXECUTION & TESTING
+# ==============================================================================
+
+# Notebook Execution
+nbconvert>=7.0.0
+nbformat>=5.9.0
+nbclient>=0.8.0
+
+# Parallel Processing
+joblib>=1.3.0
+dask>=2023.7.0
+
+# ==============================================================================
+# DATA QUALITY & VALIDATION
+# ==============================================================================
+
+# Data Validation
+great-expectations>=0.17.0
+pandera>=0.15.0
+
+# Data Profiling
+pandas-profiling>=3.6.0
+sweetviz>=2.1.0
+
+# ==============================================================================
+# EXPERIMENTAL FEATURES
+# ==============================================================================
+
+# GPU Acceleration (RAPIDS - requires NVIDIA GPU)
+# cudf>=23.0.0
+# cuml>=23.0.0
+# cugraph>=23.0.0
+
+# Distributed Computing
+# ray>=2.5.0
+# modin>=0.20.0
+
+# AutoML
+# auto-sklearn>=0.15.0
+# h2o>=3.42.0
+
+# ==============================================================================
+# DEVELOPMENT SETUP COMMANDS
+# ==============================================================================
+#
+# Initial Setup:
+#   git clone https://github.com/bcdelodx/quipu-analytics-suite.git
+#   cd quipu-analytics-suite
+#   python -m venv venv
+#   source venv/bin/activate  # On Windows: venv\Scripts\activate
+#   pip install -r requirements.txt -r requirements-dev.txt
+#
+# Pre-commit Setup:
+#   pre-commit install
+#   pre-commit run --all-files
+#
+# Testing:
+#   pytest tests/
+#   pytest --nbval notebooks/
+#
+# Code Quality:
+#   black .
+#   isort .
+#   flake8 .
+#   mypy .
+#
+# Documentation:
+#   sphinx-build -b html docs/ docs/_build/
+#
+# ==============================================================================

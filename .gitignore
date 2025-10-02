@@ -1,0 +1,179 @@
+# macOS system files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Data files (you might want to keep some data files)
+*.csv
+*.xlsx
+*.json
+*.parquet
+*.pickle
+*.pkl
+*.h5
+*.hdf5
+*.feather
+*.arrow
+*.orc
+*.avro
+*.db
+*.sqlite
+*.sqlite3
+
+# Large data directories
+data/
+datasets/
+raw_data/
+processed_data/
+output/
+outputs/
+results/
+cache/
+
+# Model files
+*.model
+*.joblib
+*.sav
+models/
+checkpoints/
+saved_models/
+
+# Logs and temporary files
+*.log
+logs/
+temp/
+tmp/
+.temp/
+.tmp/
+
+# Jupyter Notebook outputs and execution artifacts
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+*.ipynb_backup
+
+# Plotly offline files
+.plotly/
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# MyPy cache
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# Professional IDEs
+.spyderproject
+.spyproject
+.ropeproject
+
+# Documentation artifacts
+docs/_build/
+*.log
+
+# Internal demo and testing notebooks
+Academic_Standards_Demo.ipynb
+*_Demo.ipynb
+*_Internal.ipynb
+
+# IDE and editor files
+
+# OS-specific files (Windows)
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# OS-specific files (Linux)
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# Archive files (often contain sensitive data)
+*.zip
+*.tar.gz
+*.tar.bz2
+*.rar
+*.7z
+
+# API keys and secrets
+.env.local
+.env.production
+secrets.json
+config.json
+credentials.json
+*.key
+*.pem
+
+# Backup files
+*.bak
+*.backup
+*.swp
+*.swo
+*~
+
+# Keep important config files
+!requirements*.txt
+!environment.yml
+!.pylintrc
+!pyproject.toml
+!setup.cfg

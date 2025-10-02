@@ -1,0 +1,150 @@
+# ==============================================================================
+# COMPREHENSIVE TIERED ANALYTICS SUITE - REQUIREMENTS
+# ==============================================================================
+# Author: Brandon Deloatch
+# Affiliation: Quipu Research Labs, LLC
+# Date: 2025-10-02
+# Version: v1.3
+# ==============================================================================
+
+# ==============================================================================
+# CORE DATA SCIENCE STACK
+# ==============================================================================
+
+# Data Manipulation & Analysis
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Scientific Computing
+scipy>=1.10.0
+
+# Statistical Analysis  
+statsmodels>=0.14.0
+
+# ==============================================================================
+# MACHINE LEARNING & AI
+# ==============================================================================
+
+# Core ML Framework
+scikit-learn>=1.3.0
+
+# Gradient Boosting Libraries
+xgboost>=1.7.0
+lightgbm>=4.0.0
+catboost>=1.2.0
+
+# Deep Learning (Optional - for Tier2_NeuralNetworks)
+tensorflow>=2.13.0
+
+# ==============================================================================
+# VISUALIZATION & PLOTTING
+# ==============================================================================
+
+# Interactive Visualizations
+plotly>=5.15.0
+
+# Statistical Plotting
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# ==============================================================================
+# SPECIALIZED ANALYTICS
+# ==============================================================================
+
+# Time Series & Signal Processing
+PyWavelets>=1.4.0
+
+# Technical Analysis (for advanced time series)
+ta>=0.10.0
+
+# Statistical Tests
+diptest>=0.6.0
+
+# State Space Models (for advanced time series)
+pykalman>=0.9.5
+
+# ==============================================================================
+# JUPYTER ECOSYSTEM
+# ==============================================================================
+
+# Jupyter Environment
+jupyter>=1.0.0
+jupyterlab>=4.0.0
+ipywidgets>=8.0.0
+
+# ==============================================================================
+# DEVELOPMENT & UTILITIES
+# ==============================================================================
+
+# Code Quality
+black>=23.0.0
+flake8>=6.0.0
+
+# Performance
+numba>=0.57.0
+
+# Progress Bars
+tqdm>=4.65.0
+
+# ==============================================================================
+# OPTIONAL DEPENDENCIES
+# ==============================================================================
+# The following packages enhance functionality but are not strictly required:
+#
+# Advanced Time Series:
+# - prophet>=1.1.4          # Facebook Prophet for time series forecasting
+# - arch>=5.3.0             # ARCH/GARCH models
+# - pmdarima>=2.0.0          # Auto-ARIMA
+#
+# Advanced ML:
+# - imbalanced-learn>=0.11.0 # Handling imbalanced datasets
+# - bayesian-optimization>=1.4.0 # Hyperparameter optimization
+#
+# GPU Acceleration:
+# - cudf>=23.0.0             # GPU-accelerated pandas (RAPIDS)
+# - cuml>=23.0.0             # GPU-accelerated scikit-learn (RAPIDS)
+#
+# Deep Learning Alternatives:
+# - torch>=2.0.0             # PyTorch
+# - jax>=0.4.0               # JAX for high-performance ML
+#
+# Financial Analysis:
+# - yfinance>=0.2.0          # Yahoo Finance data
+# - alpha-vantage>=2.3.0     # Alpha Vantage API
+#
+# ==============================================================================
+# INSTALLATION NOTES
+# ==============================================================================
+#
+# Standard Installation:
+#   pip install -r requirements.txt
+#
+# For GPU Support (NVIDIA CUDA):
+#   pip install tensorflow[and-cuda]
+#   # or
+#   conda install tensorflow-gpu
+#
+# For Apple Silicon (M1/M2):
+#   pip install tensorflow-macos tensorflow-metal
+#
+# Conda Alternative:
+#   conda env create -f environment.yml
+#   conda activate analytics-suite
+#
+# Development Installation:
+#   pip install -r requirements.txt -r requirements-dev.txt
+#
+# ==============================================================================
+# COMPATIBILITY NOTES
+# ==============================================================================
+#
+# Python Version: 3.8+ (3.11+ recommended)
+# Operating Systems: Windows 10+, macOS 10.15+, Ubuntu 20.04+
+# Memory Requirements: 4GB+ RAM (8GB+ recommended for large datasets)
+# 
+# Package Conflicts:
+# - TensorFlow and PyTorch can coexist but may compete for GPU resources
+# - Some financial packages (talib) require additional system dependencies
+# - RAPIDS packages (cudf, cuml) require NVIDIA GPU with CUDA support
+#
+# ==============================================================================
