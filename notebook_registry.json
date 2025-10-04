@@ -1,0 +1,115 @@
+{
+  "repository": {
+    "name": "Quipu Analytics Suite",
+    "author": "Brandon Deloatch",
+    "affiliation": "Quipu Research Labs, LLC",
+    "license": "MIT",
+    "repository_url": "https://github.com/bcdelodx/quipu-analytics-suite",
+    "version": "v1.3",
+    "last_updated": "2025-10-04"
+  },
+  "header_formats": {
+    "advanced": {
+      "sections": ["title", "metadata", "contributors", "scope", "models", "business_context", "learning_outcomes", "data_provenance", "citation"]
+    },
+    "simplified": {
+      "sections": ["title", "basic_metadata", "learning_objectives", "applications", "citation_quote"]
+    }
+  },
+  "notebooks": {
+    "Tier1_Descriptive.ipynb": {
+      "title": "Tier 1: Descriptive Analytics Foundation",
+      "version": "v1.3",
+      "date": "2025-10-04",
+      "format": "simplified",
+      "notebook_scope": "Comprehensive introduction to descriptive analytics using pandas, providing foundational data manipulation and summary statistics skills essential for all subsequent analytical work.",
+      "business_applications": ["Business reporting dashboards", "KPI monitoring and tracking", "Sales performance analysis", "Customer behavior insights", "Operational efficiency metrics"]
+    },
+    "Tier1_Correlation.ipynb": {
+      "title": "Tier 1: Correlation Analysis & Relationships",
+      "version": "v1.3",
+      "date": "2025-10-04",
+      "format": "simplified",
+      "notebook_scope": "Deep dive into correlation analysis techniques, exploring relationships between variables using Pearson, Spearman, and Kendall correlation methods with interactive visualizations.",
+      "business_applications": ["Market research insights", "Risk factor identification", "Product feature relationships", "Customer segmentation analysis", "Financial portfolio correlation"]
+    },
+    "Tier2_LinearRegression.ipynb": {
+      "title": "Tier 2: Linear Regression Modeling",
+      "version": "v1.3",
+      "date": "2025-10-04",
+      "format": "advanced",
+      "notebook_scope": "Comprehensive linear regression implementation covering simple and multiple regression, assumption testing, model diagnostics, and prediction intervals with real business applications.",
+      "business_applications": ["Sales forecasting", "Price optimization", "Demand prediction", "ROI analysis", "Resource allocation planning"],
+      "models_implemented": ["Simple Linear Regression", "Multiple Linear Regression", "Polynomial Regression", "Ridge Regression (L2 Regularization)", "Residual Analysis Models"],
+      "key_visualizations": ["Scatter plots with regression lines", "Residual diagnostic plots", "Q-Q plots for normality", "Feature importance charts"],
+      "learning_outcomes": ["Master linear relationship modeling", "Understand regression assumptions", "Perform model diagnostics and validation"],
+      "technical_features": ["Scikit-learn implementation", "Statistical significance testing", "Cross-validation", "Feature scaling", "Outlier detection"],
+      "evaluation_methods": ["R-squared analysis", "Mean Squared Error (MSE)", "Mean Absolute Error (MAE)", "Residual analysis", "F-statistics"]
+    },
+    "Tier2_LogisticRegression.ipynb": {
+      "title": "Tier 2: Logistic Regression for Classification",
+      "version": "v1.3",
+      "date": "2025-10-04",
+      "format": "advanced",
+      "notebook_scope": "Advanced logistic regression techniques for binary and multiclass classification, including regularization, probability calibration, and threshold optimization for business decision-making.",
+      "business_applications": ["Customer churn prediction", "Credit approval decisions", "Marketing response modeling", "Medical diagnosis support", "Quality control classification"],
+      "models_implemented": ["Binary Logistic Regression", "Multinomial Logistic Regression", "Regularized Logistic Regression (L1/L2)", "Calibrated Probability Models", "Threshold Optimization Models"],
+      "key_visualizations": ["ROC curves and AUC analysis", "Precision-Recall curves", "Confusion matrices", "Probability calibration plots"],
+      "learning_outcomes": ["Master classification modeling", "Understand probability interpretation", "Optimize business decision thresholds"],
+      "technical_features": ["Sigmoid function implementation", "Maximum likelihood estimation", "Regularization techniques", "Cross-validation", "Feature selection"],
+      "evaluation_methods": ["Accuracy metrics", "Precision and Recall", "F1-Score", "AUC-ROC", "Log-loss"]
+    },
+    "Tier3_TimeSeries.ipynb": {
+      "title": "Tier 3: Time Series Analysis Fundamentals",
+      "version": "v1.3",
+      "date": "2025-10-04",
+      "format": "advanced",
+      "notebook_scope": "Comprehensive time series analysis covering decomposition, trend analysis, seasonality detection, and forecasting techniques with practical business applications and interactive visualizations.",
+      "business_applications": ["Sales forecasting", "Inventory management", "Financial market analysis", "Demand planning", "Resource capacity planning"],
+      "models_implemented": ["Seasonal Decomposition (STL)", "Trend Analysis Models", "Moving Average Models", "Exponential Smoothing", "Basic ARIMA Models"],
+      "key_visualizations": ["Time series decomposition plots", "Trend and seasonality charts", "Autocorrelation functions", "Forecast validation plots"],
+      "learning_outcomes": ["Understand time series components", "Master decomposition techniques", "Build forecasting models"],
+      "technical_features": ["Pandas time series operations", "Seasonal pattern detection", "Stationarity testing", "Lag analysis", "Rolling statistics"],
+      "evaluation_methods": ["Mean Absolute Error (MAE)", "Mean Squared Error (MSE)", "Mean Absolute Percentage Error (MAPE)", "Forecast accuracy metrics", "Residual analysis"]
+    },
+    "Tier4_PCA.ipynb": {
+      "title": "Tier 4: Principal Component Analysis",
+      "version": "v1.3",
+      "date": "2025-10-04",
+      "format": "advanced",
+      "notebook_scope": "Advanced dimensionality reduction using Principal Component Analysis, covering eigenvalue decomposition, variance explanation, feature transformation, and practical applications in data compression and visualization.",
+      "business_applications": ["Data compression and storage", "Customer segmentation preprocessing", "Risk factor identification", "Market research analysis", "Image and signal processing"],
+      "models_implemented": ["Standard PCA (Eigenvalue Decomposition)", "Incremental PCA for Large Datasets", "Kernel PCA for Non-linear Data", "Sparse PCA with L1 Regularization", "Probabilistic PCA"],
+      "key_visualizations": ["Scree plots for component selection", "Biplot analysis", "Explained variance charts", "2D/3D transformed data plots"],
+      "learning_outcomes": ["Master dimensionality reduction", "Understand variance preservation", "Apply PCA for data preprocessing"],
+      "technical_features": ["Eigenvalue decomposition", "Covariance matrix analysis", "Feature scaling importance", "Component interpretation", "Reconstruction error analysis"],
+      "evaluation_methods": ["Explained variance ratio", "Cumulative variance explained", "Reconstruction error", "Kaiser criterion", "Scree test"]
+    },
+    "Tier5_RandomForest.ipynb": {
+      "title": "Tier 5: Random Forest Ensemble Learning",
+      "version": "v1.3",
+      "date": "2025-10-04",
+      "format": "advanced",
+      "notebook_scope": "Advanced ensemble learning with Random Forest algorithms, covering bagging, feature importance, hyperparameter tuning, and practical applications for both classification and regression tasks.",
+      "business_applications": ["Credit scoring and risk assessment", "Customer lifetime value prediction", "Fraud detection systems", "Market segmentation", "Product recommendation engines"],
+      "models_implemented": ["Random Forest Classifier", "Random Forest Regressor", "Extra Trees Ensemble", "Gradient Boosting Classifier", "Feature Selection with Forest Models"],
+      "key_visualizations": ["Feature importance rankings", "Out-of-bag error curves", "Tree depth analysis", "Model performance comparisons"],
+      "learning_outcomes": ["Master ensemble learning concepts", "Understand bootstrap aggregating", "Optimize forest hyperparameters"],
+      "technical_features": ["Bootstrap sampling", "Random feature selection", "Out-of-bag validation", "Parallel tree training", "Feature importance calculation"],
+      "evaluation_methods": ["Out-of-bag score", "Cross-validation accuracy", "Feature importance metrics", "Permutation importance", "Model stability analysis"]
+    },
+    "Tier6_AnomalyDetection.ipynb": {
+      "title": "Tier 6: Advanced Anomaly Detection",
+      "version": "v1.3",
+      "date": "2025-10-04",
+      "format": "advanced",
+      "notebook_scope": "Comprehensive anomaly detection techniques combining statistical methods and machine learning approaches for identifying outliers, fraud, and unusual patterns in complex datasets.",
+      "business_applications": ["Fraud detection in financial transactions", "Network security monitoring", "Quality control in manufacturing", "Healthcare anomaly identification", "IoT sensor monitoring"],
+      "models_implemented": ["Isolation Forest", "One-Class SVM", "Local Outlier Factor (LOF)", "Elliptic Envelope", "Statistical Z-Score Methods"],
+      "key_visualizations": ["Anomaly score distributions", "2D/3D outlier visualization", "ROC curves for detection performance", "Interactive anomaly exploration dashboards"],
+      "learning_outcomes": ["Master unsupervised anomaly detection", "Compare statistical vs ML approaches", "Build real-time detection systems"],
+      "technical_features": ["Unsupervised learning", "Density estimation", "Distance-based methods", "Ensemble anomaly detection", "Real-time scoring"],
+      "evaluation_methods": ["Precision at K", "Area Under ROC Curve", "Average Precision", "Silhouette analysis", "Manual validation metrics"]
+    }
+  }
+}
